@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="div" style="height: 300px; width: 300px; background-color: red;">
+    <div>
+      <button id="btn" style="margin-top: 400px;" >
+        remove
+      </button>
+    </div>
+    
+
+  </div>
+  <script>
+    let btn = document.getElementById('btn')
+    let div = document.getElementById('div')
+
+    function mouse (){
+      console.log('slm')
+    }
+    div.addEventListener('mousemove', mouse)
+    btn.addEventListener('click', Element=>{
+      div.removeEventListener('mousemove', mouse)
+    })
+    btn.addEventListener('touchstart', Element=>{
+      div.style.backgroundColor = 'blue'
+    })
+    btn.addEventListener('touchend', Element=>{
+      div.style.backgroundColor = 'green'
+    })
+    btn.addEventListener('touchstart', Element=>{
+      div.style.backgroundColor = 'pink'
+    })
+  </script>
+  
+</body>
+</html>
